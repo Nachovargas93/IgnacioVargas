@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" m-0>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-green-400 to-blue-500 bg-opacity-50">
+    <div class="container m-auto flex justify-center overflow-hidden p-20">
+        <div class="grid grid-row-3 bg-white shadow-xl w-24 h-52 rounded mr-2 divide-y ">
+            <div class="h-16 flex justify-center cursor-pointer" onclick="showInfo()"> <img src="/img/user.svg" alt="" class="button w-6"> </div>
+            <div class="h-16 flex justify-center cursor-pointer" onclick="showCv()"> <img src="/img/resume-and-cv.svg" alt="" class="w-6 "></div>
+            <div class="h-16 flex justify-center cursor-pointer" onclick="showContacto()"> <img src="/img/arroba.svg" alt="" class="w-6 "></div>
+        </div>
+
+        <div class="bg-white shadow-4xl max-w-md overflow-hidden border rounded focus:ring-4 focus:ring-green-500 focus:ring-opacity-50">
+            <img class="w-full rounded-b-lg"src="/img/FotoCarnet.jpg" alt="">
+            <div class="">
+                <div class="px-6 py-2 font-bold font-sans text-3xl mb-2 text-center text-gray-700"> Ignacio Vargas </div>
+                <div class="px-6  text-center mb-2 text-indigo-500 font-bold"> Desarrollador Web </div>
+                <div class="px-6 py-2 my-2 flex space-x-4 justify-center">
+                    <img src="/img/github.svg" alt="" class="w-5 cursor-pointer">
+                    <img src="/img/whatsapp.svg" alt="" class="w-5 cursor-pointer">
+                    <img src="/img/gmail.svg" alt="" class="w-5 cursor-pointer">
+                </div>
+                <div class="mt-24 grid grid-cols-2">
+                    <div class="button px-6 py-2.5 cursor-default text-center border-t border-r border-green-500 border-opacity-25">DESCARGAR CV</div>
+                    <div class="button px-6 py-2.5 cursor-default text-center border-t border-green-500 border-opacity-25">CONTACTAME</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border rounded-r-lg w-10/12 overflow-hidden shadow-2xl bg-white my-6">
+            <div id="info">
+                <div class="grid grid-cols-5 gap-y-3 mt-6 px-6">
+                    <div class="col-span-5 font-sans text-3xl font-semibold">
+                        Sobre Mi
+                    </div>
+                    <div class="col-span-3 leading-tight">
+                        <p class="font-bold text-gray-700">
+                            Hola! Soy Nacho :)
+                        </p>
+                        <p class="">
+                            Actualmente estoy por comenzar el
+                            segundo año de ingeniería en
+                            sistemas en la universidad
+                            tecnológica nacional, y en la
+                            búsqueda de formar parte de algún
+                            equipo de desarrollo. Me declaro
+                            autodidacta y creativo y tengo
+                            conocimientos básicos en desarrollo
+                            web (tanto Front end como Back
+                            end), desarrollo mobile, base de
+                            datos y metodologías agiles.
+                        </p>
+                        
+                    </div> 
+                    <div class="col-span-2 px-6">
+                        <p class="button bg-gradient-to-r from-green-500 to-transparent text-gray-700 font-bold rounded py-1 px-1">Edad:</p>
+                        <p class="button bg-gradient-to-r from-transparent to-green-500 text-gray-700 font-bold rounded py-1 px-1">Residencia:</p>
+                        <p class="button bg-gradient-to-r from-green-500 to-transparent text-gray-700 font-bold rounded py-1 px-1">Direccion:</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-y-3 mt-6 px-6">
+                    <div class="col-span-2 font-sans text-3xl font-semibold">
+                        Mis Intereses
+                    </div>
+                </div>
+            </div>
+            <div id="cv">
+                <div class="grid grid-cols-2 gap-y-3 mt-3 px-6 divide-y">
+                    <div class="col-span-2 font-sans text-3xl font-semibold mb-6">
+                        Curriculum
+                    </div>
+                    <div class="font-sans text-3xl font-semibold border-r border-blue-500 border-opacity-25">
+                        <p class="text-center"> Experiencia </p>
+                        <div class="m-4">
+                            <ul class="py-2">
+                                <li class="text-lg">
+                                    <div class="text-sm text-gray-300 rounded-sm border-2 border-gray-200 px-1 mr-56">Jul. 2019 - sep. 2019</div>
+                                    Pasante de IT
+                                    <p class="text-sm text-gray-400 font-normal">Globant.</p>
+                                    
+                                    <p class="text-xs text-justify">Durante el ultimo año de la tecnicatura, en grupos realizamos un
+                                        proyecto el cual constaba en conseguir nuestro propio cliente y
+                                        desarrollar un sistema web. El propósito de la pasantía fue que el
+                                        grupo se desarrolle en un ambiente laboral y rodeado de profesionales
+                                        que se desafían día a día.</p>
+                                </li>
+                                </li>
+                            </ul>
+                            <ul class="py-2">
+                                <li class="text-lg">
+                                    <div class="text-sm text-gray-300 rounded-sm border-2 border-gray-200 px-1 mr-56">Jul. 2019 - sep. 2019</div>
+                                    Pasante de IT
+                                    <p class="text-sm text-gray-400 font-normal">Globant.</p>
+                                    
+                                    <p class="text-xs text-justify">Durante el ultimo año de la tecnicatura, en grupos realizamos un
+                                        proyecto el cual constaba en conseguir nuestro propio cliente y
+                                        desarrollar un sistema web. El propósito de la pasantía fue que el
+                                        grupo se desarrolle en un ambiente laboral y rodeado de profesionales
+                                        que se desafían día a día.</p>
+                                </li>
+                                </li>
+                            </ul>
+                        </div> 
+
+                    </div>
+                    <div class="font-sans text-3xl font-semibold border-blue-500 border-opacity-25">
+                        <p class="text-center"> Formacion </p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="contacto">
+                contacto
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/script/script.js" type="text/javascript"></script>
+</body>
+</html>
